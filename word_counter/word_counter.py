@@ -2,15 +2,30 @@ def main():
 
     text_file = input("Enter the name of the text file: ")
 
-    try:
-        file = open(text_file, "r")
-        text = file.read()
-        words = text.split(" ")
+    text = open_text(text_file)
 
-        print("Word count:", len(words))
+    print("Word count:", word_count(text))
+
+
+def open_text(text_file_name):
+
+    try:
+        if len(text_file_name.split(".")) > 1:
+            text = open(text_file_name, "r")
+
+        else:
+            text = open(text_file_name + ".txt", "r")
 
     except FileNotFoundError:
-        print("Please enter a valid name")
+        print("Select a valid .txt please")
+        exit(1)
+
+    return text
+
+
+def word_count(file_name):
+    text = file_name.read()
+    return len(text.split(" "))
 
 
 main()
