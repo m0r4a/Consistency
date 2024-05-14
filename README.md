@@ -4,11 +4,9 @@ I think that consistency is the key to success.
 
 The objective of this project is keeping me consistent with my programming skills. The goal is to add at least one commit to my GitHub repository every day. If I can't add a commit in a regular project, I will come here and create a small project, script, quirky idea, or anything that comes to my mind so I can keep the consistency.
 
-## List of completed projects
+## List of projects
 
-- Word Counter: A simple script that counts the number of words in a text.
-
-## List of project ideas 
+- [x] Word Counter: A simple script that counts the number of words in a text.
 
 - [ ] Morse code translator: a code that transforms morse code into text
 
@@ -47,7 +45,7 @@ The objective of this project is keeping me consistent with my programming skill
 - [ ] Data fetcher (.config file): Write a code that displays certain information such as the weather, your location, the hour and so on (the purpose is practicing with JSON or yaml files to use them for configuration) 
 
 
-## OOP related 
+### OOP related 
 
 - [ ] Bank Account Manager: Create a class called Account which will be an abstract class for three other classes called CheckingAccount, SavingsAccount and BusinessAccount. Manage credits and debits from these accounts through an ATM style program.
 
