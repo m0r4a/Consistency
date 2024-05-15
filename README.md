@@ -6,61 +6,34 @@ The objective of this project is keeping me consistent with my programming skill
 
 ## List of projects
 
-- [x] Word Counter: A simple script that counts the number of words in a text.
-
-- [ ] Morse code translator: a code that transforms morse code into text
-
-- [ ] URL Shortener: Create a service that takes in URLs and returns a shortened version.
-
-- [ ] Markdown to HTML converter: Write a script that can convert markdown files to HTML.
-
-- [ ] Palindrome Checker: Create a program that checks if a given word or sentence is a palindrome.
-
-- [ ] Prime number generator: Write a script that generates prime numbers up to a number specified by the user.
-
-- [ ]  Fibonacci Sequence: Develop a program that displays the Fibonacci sequence up to a certain number.
-
-- [ ] Sorting algorithm visualizer: Implement a basic sorting algorithm like bubble sort, and add a visualization feature (maybe a visualizer for arrays in general) 
-
-- [ ] Simple Quiz App: Build a quiz app with multiple choice questions and keep score.
-
-- [ ] Binary search algorithm: Implement the binary search algorithm and test it with different arrays.
-
-- [ ] Factorial Calculator: Write a program that calculates the factorial of a number.
-
-- [ ] Simple API requests: Use requests library to make some GET requests to a public API and display the data.
-
-- [ ] Anagram checker: Write a program that checks if two given words are anagrams.
-
-- [ ] Levenshtein Distance Calculator: Implement a script that calculates the Levenshtein distance (minimum number of single-character edits required to change one word into the other) between two words.
-
-- [ ] Word Frequency Counter: Create a program that counts the frequency of each word in a text file.
-
-- [ ] IP Address Validator: Develop a script that validates if a given string is a valid IP address.
-
-- [ ] Caesar Cipher: Implement a Caesar cipher that can encode and decode messages.
-
-- [ ] Days Until Christmas: Write a script that tells you how many days are left until Christmas (maybe with the possibility of adding other holidays) 
-
-- [ ] Data fetcher (.config file): Write a code that displays certain information such as the weather, your location, the hour and so on (the purpose is practicing with JSON or yaml files to use them for configuration) 
-
-
-### OOP related 
-
-- [ ] Bank Account Manager: Create a class called Account which will be an abstract class for three other classes called CheckingAccount, SavingsAccount and BusinessAccount. Manage credits and debits from these accounts through an ATM style program.
-
-- [ ] Library Management System: Create classes for objects like Books, Library and Users. Implement features like issuing a book, returning a book, adding a book to the library, registering a user etc.
-
-- [ ] Inventory Management System: Implement classes for Products and Inventory. In the Product class, you can store values like name, manufacturer, price etc. In the Inventory class, you can use a list to store and manage multiple products.
-- [ ] Student Management System: Create classes like Student and Classroom. Implement methods to add students, remove students, sort students by name or ID, etc.
-
-- [ ] E-commerce System: Build simple e-commerce classes like User, Product, Cart. Implement methods for adding to cart, removing from cart, viewing items in the cart, checking out, etc.
-
-- [ ] Text Adventure Game: Create a more complex version of a text game with classes like Player, Room, Item, Monster etc. Each room can have different items or monsters.
-
-- [ ] Zoo Management: Implement classes like Animal, Cage, Employee, Visitor etc. to simulate a zoo environment.
-
-- [ ] Music Player: Create classes like Song, Album, Artist, Playlist to build a simple music player.
-
-- [ ] Airline Reservation System: Implement classes like Flight, Passenger, Ticket, Airline etc. to simulate an airline reservation system.
-
+| Project | Description | Difficulty | Status |
+| --- | --- | --- | --- |
+| [Word Counter](word_counter/word_counter.py) | A simple script that counts the number of words in a text. | 1/5 | Done |
+| [Project cleaner](project_cleaner/project_cleaner.py) | A script that will print only the project name of all this repository. | 2/5 | To do |
+| [Morse code translator](morse_code_translator/morse_code_translator.py) | A code that transforms morse code into text | 2/5 | To do |
+| [URL Shortener](url_shortener/url_shortener.py) | Create a service that takes in URLs and returns a shortened version. | 3/5 | To do |
+| [Markdown to HTML converter](markdown_to_html_converter/markdown_to_html_converter.py) | Write a script that can convert markdown files to HTML. | 3/5 | To do |
+| [Palindrome Checker](palindrome_checker/palindrome_checker.py) | Create a program that checks if a given word or sentence is a palindrome. | 2/5 | To do |
+| [Prime number generator](prime_number_generator/prime_number_generator.py) | Write a script that generates prime numbers up to a number specified by the user. | 2/5 | To do |
+| [Fibonacci Sequence](fibonacci_sequence/fibonacci_sequence.py) | Develop a program that displays the Fibonacci sequence up to a certain number. | 2/5 | To do |
+| [Sorting algorithm visualizer](sorting_algorithm_visualizer/sorting_algorithm_visualizer.py) | Implement a basic sorting algorithm like bubble sort, and add a visualization feature (maybe a visualizer for arrays in general) | 3/5 | To do |
+| [Simple Quiz App](simple_quiz_app/simple_quiz_app.py) | Build a quiz app with multiple choice questions and keep score. | 2/5 | To do |
+| [Binary search algorithm](binary_search_algorithm/binary_search_algorithm.py) | Implement the binary search algorithm and test it with different arrays. | 3/5 | To do |
+| [Factorial Calculator](factorial_calculator/factorial_calculator.py) | Write a program that calculates the factorial of a number. | 2/5 | To do |
+| [Simple API requests](simple_api_requests/simple_api_requests.py) | Use requests library to make some GET requests to a public API and display the data. | 2/5 | To do |
+| [Anagram checker](anagram_checker/anagram_checker.py) | Write a program that checks if two given words are anagrams. | 2/5 | To do |
+| [Levenshtein Distance Calculator](levenshtein_distance_calculator/levenshtein_distance_calculator.py) | Implement a script that calculates the Levenshtein distance (minimum number of single-character edits required to change one word into the other) between two words. | 3/5 | To do |
+| [Word Frequency Counter](word_frequency_counter/word_frequency_counter.py) | Create a program that counts the frequency of each word in a text file. | 2/5 | To do |
+| [IP Address Validator](ip_address_validator/ip_address_validator.py) | Develop a script that validates if a given string is a valid IP address. | 2/5 | To do |
+| [Caesar Cipher](caesar_cipher/caesar_cipher.py) | Implement a Caesar cipher that can encode and decode messages. | 2/5 | To do |
+| [Days Until Christmas](days_until_christmas/days_until_christmas.py) | Write a script that tells you how many days are left until Christmas (maybe with the possibility of adding other holidays) | 2/5 | To do |
+| [Data fetcher (.config file)](data_fetcher/data_fetcher.py) | Write a code that displays certain information such as the weather, your location, the hour and so on (the purpose is practicing with JSON or yaml files to use them for configuration) | 2/5 | To do |
+| [Bank Account Manager](bank_account_manager/bank_account_manager.py) | Create a class called Account which will be an abstract class for three other classes called CheckingAccount, SavingsAccount and BusinessAccount. Manage credits and debits from these accounts through an ATM style program. | 3/5 | To do |
+| [Library Management System](library_management_system/library_management_system.py) | Create classes for objects like Books, Library and Users. Implement features like issuing a book, returning a book, adding a book to the library, registering a user etc. | 3/5 | To do |
+| [Inventory Management System](inventory_management_system/inventory_management_system.py) | Implement classes for Products and Inventory. In the Product class, you can store values like name, manufacturer, price etc. In the Inventory class, you can use a list to store and manage multiple products. | 3/5 | To do |
+| [Student Management System](student_management_system/student_management_system.py) | Create classes like Student and Classroom. Implement methods to add students, remove students, sort students by name or ID, etc. | 3/5 | To do |
+| [E-commerce System](e_commerce_system/e_commerce_system.py) | Build simple e-commerce classes like User, Product, Cart. Implement methods for adding to cart, removing from cart, viewing items in the cart, checking out, etc. | 3/5 | To do |
+| [Text Adventure Game](text_adventure_game/text_adventure_game.py) | Create a more complex version of a text game with classes like Player, Room, Item, Monster etc. Each room can have different items or monsters. | 3/5 | To do |
+| [Zoo Management](zoo_management/zoo_management.py) | Implement classes like Animal, Cage, Employee, Visitor etc. to simulate a zoo environment. | 3/5 | To do |
+| [Music Player](music_player/music_player.py) | Create classes like Song, Album, Artist, Playlist to build a simple music player. | 3/5 | To do |
+| [Airline Reservation System](airline_reservation_system/airline_reservation_system.py) | Implement classes like Flight, Passenger, Ticket, Airline etc. to simulate an airline reservation system. | 3/5 | To do |
