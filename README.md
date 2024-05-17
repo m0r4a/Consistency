@@ -9,6 +9,8 @@ The objective of this project is keeping me consistent with my programming skill
 | Project | Description | Difficulty | Status |
 | --- | --- | --- | --- |
 | [Word Counter](word_counter) | A simple script that counts the number of words in a text. | 1/5 | Done |
+| [Directory splitter](directory_splitter) | A script that splits a directory into two directories. | 2/5 | Done |
+| [Bluk image compressor](bulk_image_compressor) | A script that compresses all images in a directory. | 2/5 | To do |
 | [Project viewer and picker](project_viewer_picker) | A script that shows you all the projects and lets you pick a random one. | 2/5 | To do |
 | [Morse code translator](morse_code_translator) | A code that transforms morse code into text | 2/5 | To do |
 | [URL Shortener](url_shortener) | Create a service that takes in URLs and returns a shortened version. | 3/5 | To do |

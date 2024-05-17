@@ -70,7 +70,7 @@ def show_all_projects(projects_dict):
 def show_random_project(projects_dict):
     clear_terminal()
     random_project = random.choice(list(projects_dict.values()))
-    print("---------- Random Project ----------:")
+    print("---------- Random Project ----------")
     print_project_info(random_project)
 
 
