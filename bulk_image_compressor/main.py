@@ -6,6 +6,13 @@ from PIL import Image
 feedback = False
 
 
+def get_next_output_directory(base_name):
+    i = 1
+    while os.path.exists(f"{base_name}_{i}"):
+        i += 1
+    return f"{base_name}_{i}"
+
+
 def compress_images(input_directory, quality, feedback):
     # Ensure the input directory exists
     if not os.path.isdir(input_directory):
@@ -15,10 +22,7 @@ def compress_images(input_directory, quality, feedback):
     output_directory = "output_directory"
 
     # Check if the output directory already exists
-    if os.path.exists(output_directory):
-        print(
-            f"The directory {output_directory} already exists. Please move or rename it.")
-        exit(1)
+    output_directory = get_next_output_directory(output_directory)
 
     # Create the output directory
     os.makedirs(output_directory, exist_ok=True)
