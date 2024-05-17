@@ -2,32 +2,51 @@ import os
 import shutil
 
 
+def get_next_output_directory(base_name, percentage):
+    i = 2
+    remaining_percentage = 100 - percentage
+
+    if os.path.exists(f"{base_name}_{percentage}_{remaining_percentage}"):
+        while os.path.exists(f"{base_name}_{percentage}_{remaining_percentage}_{i}"):
+            i += 1
+        return f"{base_name}_{percentage}_{remaining_percentage}_{i}"
+
+    else:
+        return f"{base_name}_{percentage}_{remaining_percentage}"
+
+
 def split_directory(input_directory, percentage):
-    # Checking if the input directory exists
+    # Check if the input directory exists
     if not os.path.isdir(input_directory):
         raise ValueError(f"The directory {input_directory} does not exist")
 
-    # Creating the output directories
-    output_directory = "output_directory"
+    # Create the next available output directory
+    output_directory = get_next_output_directory(
+        "output_directory", percentage)
     percentage_directory = os.path.join(output_directory, str(percentage))
     remaining_percentage = 100 - percentage
     remaining_directory = os.path.join(
         output_directory, str(remaining_percentage))
 
+    # For 50% split, create directories with _1 and _2 suffix
+    if percentage == 50:
+        percentage_directory += "_1"
+        remaining_directory += "_2"
+
     os.makedirs(percentage_directory, exist_ok=True)
     os.makedirs(remaining_directory, exist_ok=True)
 
-    # Getting files in the input directory
+    # Get list of files in the input directory
     files = sorted(os.listdir(input_directory))
 
-    # Calculating the split index
+    # Calculate the split index
     split_index = int(len(files) * percentage / 100)
 
-    # Splitting the files
+    # Split the files
     percentage_files = files[:split_index]
     remaining_files = files[split_index:]
 
-    # Coping the files to the output directories
+    # Copy the files to the respective directories
     for file in percentage_files:
         shutil.copy(os.path.join(input_directory, file),
                     os.path.join(percentage_directory, file))
