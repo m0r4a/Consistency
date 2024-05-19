@@ -1,8 +1,8 @@
 import os
 from PIL import Image
 
-# I wouldn't usually add this here but this code is for a friend so I'm trying
-# to make it easier to use.
+# This variable is used to show the process of
+# each image being compressed or not
 feedback = False
 
 
