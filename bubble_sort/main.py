@@ -5,3 +5,13 @@ def bubble_sort(arr):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
+
+
+def main():
+    arr = [64, 34, 25, 12, 22, 11, 90]
+    print("Unsorted array is:", arr)
+    print("Sorted array is:", bubble_sort(arr))
+
+
+if __name__ == "__main__":
+    main()
