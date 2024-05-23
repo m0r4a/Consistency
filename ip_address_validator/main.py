@@ -4,10 +4,11 @@ import sys
 
 def ip_address_checker(ip_address_string):
 
-    if ipaddress.ip_address(ip_address_string):
+    try:
+        ipaddress.ip_address(ip_address_string)
         print("It\'s indeed an IP address!")
         exit(0)
-    else:
+    except ValueError:
         print("It\'s not an IP address!")
         exit(1)
 
