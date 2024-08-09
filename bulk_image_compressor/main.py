@@ -42,7 +42,7 @@ def compress_images(input_directory, quality, feedback):
                 if feedback:
                     print(f"Compressed {file} and saved to {output_file_path}")
 
-        except (IOError, SyntaxError) as e:
+        except (IOError, SyntaxError):
             print(f"Skipping file {file}, as it is not a valid image.")
 
 
